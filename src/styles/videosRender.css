@@ -1,0 +1,210 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.Card_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 180px;
+    background-color: black;
+    padding: 0.5rem;
+    position: relative;
+    gap: 0.2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    margin-bottom: 3rem;
+}
+
+.Card_video_player {
+    width: 190px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card_video_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 180px;
+    background-color: var(--color_8);
+    position: relative;
+    border-radius: 7px;
+}
+
+.Card_video_information::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -59px;
+    border-top: 30px solid var(--color_8);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.Card_video_information_tittle {
+    width: 80%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.Card_video_information h3 {
+    text-align: center;
+    color: var(--color_5);
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+
+.Card_information_btns {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.Card_information_btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 79.33px;
+    height: 54.66px;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    border: none;
+    bottom: -6.5rem;
+    left: var(50% - 5rem);
+    border-radius: 20px;
+}
+
+.Card_information_btns button:hover {
+    cursor: pointer;
+}
+
+.Card_information_btns .bx {
+    font-size: 4rem;
+    color: var(--color_7);
+}
+
+
+@media (width <=420px) {
+    .Card_video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 180px;
+        background-color: black;
+        padding: 0.7rem;
+        position: relative;
+        gap: 0.2rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        margin-bottom: 3rem;
+        transform: scale(0.8);
+    }
+
+    .Card_video_player {
+        width: 190px;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card_video_information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 180px;
+        background-color: var(--color_8);
+        position: relative;
+        border-radius: 7px;
+        padding: 0.3rem;
+    }
+
+    .Card_video_information::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: calc(50% - 30px);
+        bottom: -55px;
+        border-top: 30px solid var(--color_8);
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+    }
+
+    .Card_video_information_tittle {
+        width: 80%;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    .Card_video_information h3 {
+        text-align: justify;
+        color: var(--color_5);
+        font-size: 0.8rem;
+        overflow: hidden;
+        padding: 0.2rem;
+    }
+
+    .Card_information_btns {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .Card_information_btns button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 79.33px;
+        height: 54.66px;
+        position: absolute;
+        z-index: 1;
+        background-color: black;
+        border: none;
+        bottom: -6.5rem;
+        left: var(50% - 5rem);
+        border-radius: 20px;
+    }
+
+    .Card_information_btns button:hover {
+        cursor: pointer;
+    }
+
+    .Card_information_btns .bx {
+        font-size: 4rem;
+        color: var(--color_7);
+    }
+}

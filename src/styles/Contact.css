@@ -1,0 +1,410 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color_5);
+    margin-top: 3rem;
+}
+
+.contact_item {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact_item::after {
+   content: 'JV';
+   font-size: 8rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: block;
+   width: 160px;
+   height: 160px;
+   position: absolute;
+   border-top: 10px solid rgb(75, 71, 71);
+   border-bottom: 10px solid rgb(75, 71, 71);
+   border-right: 10px solid rgb(75, 71, 71);
+   border-left: 10px solid rgb(75, 71, 71);
+   background-color: var(--color_7);
+   right: 0;
+   bottom: 10px;
+}
+
+.contact_item h2{
+    text-align: left;
+    font-size: 9.5rem;
+    text-transform: lowercase;
+    font-weight: bolder;
+    color: var(--color_7);
+}
+
+.contact_item a {
+    text-decoration: none;
+    color: rgb(75, 71, 71);
+}
+
+.contact_item a:hover {
+    text-decoration: underline;
+}
+
+@media ( 1390px < width < 1620px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 3cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 140px;
+       height: 140px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 0;
+       bottom: 10px;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 8rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 12rem;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media ( 1205px < width <= 1390px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 2.5cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 120px;
+       height: 120px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 0;
+       bottom: 10px;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 7rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 11rem;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media ( 1030px < width <= 1205px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 2.5cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 120px;
+       height: 120px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 30px;
+       bottom: 30px;
+       display: none;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 6rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 10rem;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+@media ( 830px < width <= 1030px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 2.5cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 120px;
+       height: 120px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 30px;
+       bottom: 5px;
+       display: none;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 5rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 9.5rem;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+
+@media ( 500px < width <= 830px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 2.5cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 120px;
+       height: 120px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 30px;
+       bottom: 5px;
+       display: none;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 4rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 8.5rem !important;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+
+@media ( 300px < width <= 500px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 2.5cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 120px;
+       height: 120px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 30px;
+       bottom: var(--color_2);
+       display: none;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 3rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 8.5rem !important;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}
+
+
+@media ( 0 < width <= 300px) {
+    .contact_item {
+        width: 85%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .contact_item::after {
+       content: 'JV';
+       font-size: 2.5cm;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       display: block;
+       width: 120px;
+       height: 120px;
+       position: absolute;
+       border-top: 10px solid rgb(75, 71, 71);
+       border-bottom: 10px solid rgb(75, 71, 71);
+       border-right: 10px solid rgb(75, 71, 71);
+       border-left: 10px solid rgb(75, 71, 71);
+       background-color: var(--color_7);
+       right: 30px;
+       bottom: -var(--color_2);
+       display: none;
+    }
+    
+    .contact_item h2{
+        text-align: left;
+        font-size: 2.5rem;
+        text-transform: lowercase;
+        font-weight: bolder;
+        color: var(--color_7);
+        line-height: 5rem !important;
+    }
+    
+    .contact_item a {
+        text-decoration: none;
+        color: rgb(75, 71, 71);
+    }
+    
+    .contact_item a:hover {
+        text-decoration: underline;
+    } 
+}

@@ -1,0 +1,311 @@
+:root {
+    --color_1: #FAFAFF;
+    --color_2: #EEF0F2;
+    --color_3: #ECEBE4;
+    --color_4: #DADDD8;
+    --color_5: #1C1C1C;
+    --color_6: #5c7aff;
+    --color_7: #faf9f9;
+    --color_8: #bdc9ff;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--color_7);
+    z-index: 10;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_7);
+}
+
+.container1_btns {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_7);
+    gap: 4rem;
+}
+
+.container1_haf {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_3);
+}
+
+.container1 button {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: none;
+    background-color: transparent;
+}
+
+.container1 button .bx {
+    color: var(--color_5);
+}
+
+.container2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_4);
+}
+
+.container2_logo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_3);
+    gap: 5rem;
+}
+
+.container2_thx {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--color_7);
+}
+
+.container2_thx button {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+}
+
+.container2_thx button .bx {
+    color: var(--color_5);
+}
+
+.header_logo_name_square_footer {
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.header_logo_name_triangle_footer {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header_logo_name_triangle_footer::after {
+    content: '';
+    display: block;
+    border-top: 15px solid transparent;
+    border-bottom: 26px solid black;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    bottom: 0px;
+}
+
+.header_logo_name_circle_footer {
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+@media (600px < width < 1000px) {
+    .container1 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        transform: scale(0.8);
+    }
+
+    .container1_btns {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        gap: 2.5rem;
+    }
+
+    .container1 button {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .container2 {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_4);
+        transform: scale(0.8);
+    }
+
+    .container2_thx {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: var(--color_7);
+    }
+
+    .container2_thx button {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+}
+
+@media (0 < width <=600px) {
+    .footer {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: var(--color_7);
+        z-index: 10;
+        margin-top: 50px;
+        gap: 3rem;
+    }
+
+    .container1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        gap: 1rem;
+    }
+
+    .container1_btns {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_7);
+        gap: 1rem;
+    }
+
+    .container1 button {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .container2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color_4);
+        transform: scale(0.95);
+    }
+
+    .container2_logo {
+        display: none;
+    }
+
+    .container1_haf{
+        display: none;
+    }
+
+    .container2_thx {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: var(--color_7);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .container2_thx button {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        border: none;
+        background-color: transparent;
+    }
+
+}
