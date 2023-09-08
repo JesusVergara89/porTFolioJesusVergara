@@ -30,7 +30,7 @@ const Projects = () => {
                 </div>
                 <div className='projects_main_carousel_img'>
                     <img src={img4} alt="" />
-                    <button> <a href="https://pokedex-catch-them-all.netlify.app/#/pokedex" target='blank'><i className='bx bx-navigation'></i></a></button>
+                    <button> <a href="https://pokedex-be-fun.netlify.app/#/" target='blank'><i className='bx bx-navigation'></i></a></button>
                     <h4>Pokedex</h4>
                 </div>
             </div>
