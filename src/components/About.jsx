@@ -17,7 +17,18 @@ const About = () => {
                     
                     <div className="paragraph">
                     <p>
-                    I'm a highly skilled junior Front-end developer specializing in diverse web interface development through programming. My primary objective is to transform ideas and designs into exceptionally functional and visually appealing websites. I am dedicated to continuous improvement, staying abreast of the latest trends and technologies, to consistently deliver high-quality solutions. I warmly invite you to explore my portfolio, where you can review my work and previous experiences. 
+                    I'm a highly skilled junior 
+                    Front-end developer specializing 
+                    in diverse web interface development 
+                    through programming. My primary objective 
+                    is to transform ideas and designs into exceptionally 
+                    functional and visually appealing websites. 
+                    I am dedicated to continuous improvement, 
+                    staying abreast of the latest trends and 
+                    technologies, to consistently deliver 
+                    high-quality solutions. I warmly invite 
+                    you to explore my portfolio, where you 
+                    can review my work and previous experiences. 
                     </p>
                     </div>
                 </div>

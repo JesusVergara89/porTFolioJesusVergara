@@ -14,7 +14,7 @@ const VideosRender = ({ video }) => {
             <div className="Card_video_player">
                 <ReactPlayer
                     url={video.url}
-                    width={120} 
+                    width={120}
                     height={100}
                     playing={true}
                     muted={true}
@@ -27,7 +27,10 @@ const VideosRender = ({ video }) => {
                 <div className="Card_information_btns">
                     <h4>WATCH IT ON</h4>
                     <h4>...</h4>
-                    <button onClick={handleClick}><i className='bx bxl-youtube'></i></button>
+                    <button
+                        onClick={handleClick}>
+                        <i className='bx bxl-youtube'></i>
+                    </button>
                 </div>
             </div>
         </article>

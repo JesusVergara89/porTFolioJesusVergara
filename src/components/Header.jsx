@@ -36,9 +36,18 @@ const Header = () => {
                 </div>
             </div>
             <nav className="header_nav">
-                <button className={locationHome ? 'link-header' : ''} onClick={functionSelectHome} ><Link to='/'>HOME</Link></button>
-                <button className={locationAbout ? 'link-header' : ''} onClick={functionSelectAbout} ><Link to='About'>ABOUT</Link></button>
-                <button className={locationContact ? 'link-header' : ''} onClick={functionSelectContact} ><Link to='Contact'>CONTACT</Link></button>
+                <button
+                    className={locationHome ? 'link-header' : ''}
+                    onClick={functionSelectHome} >
+                    <Link to='/'>HOME</Link></button>
+                <button
+                    className={locationAbout ? 'link-header' : ''}
+                    onClick={functionSelectAbout} >
+                    <Link to='About'>ABOUT</Link></button>
+                <button
+                    className={locationContact ? 'link-header' : ''}
+                    onClick={functionSelectContact} >
+                    <Link to='Contact'>CONTACT</Link></button>
             </nav>
         </header>
     )

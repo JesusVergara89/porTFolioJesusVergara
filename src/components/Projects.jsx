@@ -15,22 +15,41 @@ const Projects = () => {
             <div className="projects_main_carousel">
                 <div className='projects_main_carousel_img'>
                     <img src={img1} alt="" />
-                    <button> <a href="https://wheaterapp-jesus-vergara.netlify.app/" target='blank'><i className='bx bx-navigation'></i></a></button>
+                    <button>
+                        <a href="https://wheaterapp-jesus-vergara.netlify.app/" target='_blank'>
+                            <i className='bx bx-navigation'></i>
+                        </a>
+                    </button>
                     <h4>Weather App</h4>
                 </div>
                 <div className='projects_main_carousel_img'>
                     <img src={img2} alt="" />
-                    <button> <a href="https://jesusvergara.tech/" target='blank'><i className='bx bx-navigation'></i></a></button>
+                    <button>
+                        <a href="https://jesusvergara.tech/" target='_blank'>
+                            <i className='bx bx-navigation'>
+                            </i>
+                        </a>
+                    </button>
                     <h4>Portfolio</h4>
                 </div>
                 <div className='projects_main_carousel_img'>
                     <img src={img3} alt="" />
-                    <button> <a href="https://barmexwebapp.netlify.app/" target='blank'><i className='bx bx-navigation'></i></a></button>
+                    <button>
+                        <a href="https://barmexwebapp.netlify.app/" target='_blank'>
+                            <i className='bx bx-navigation'>
+                            </i>
+                        </a>
+                    </button>
                     <h4>Solar Budget</h4>
                 </div>
                 <div className='projects_main_carousel_img'>
                     <img src={img4} alt="" />
-                    <button> <a href="https://pokedex-be-fun.netlify.app/#/" target='blank'><i className='bx bx-navigation'></i></a></button>
+                    <button>
+                        <a href="https://pokedex-be-fun.netlify.app/#/" target='_blank'>
+                            <i className='bx bx-navigation'>
+                            </i>
+                        </a>
+                    </button>
                     <h4>Pokedex</h4>
                 </div>
             </div>
