@@ -8,9 +8,9 @@ const Contact = () => {
 
                 <h2>
                     YOU CAN CONTACT ME VIA 
-                    <hr />
+                    <br />
                     <a href="mailto:jesusmanuelv1989@gmail.com" target="_blank" rel="noopener noreferrer">MAIL</a>, 
-                    <hr />
+                    <br />
                     <a href="https://www.linkedin.com/in/jesus-manuel-vergara-975799216/" target="_blank" rel="noopener noreferrer">LINKEDIN</a> 
                 </h2>
 
