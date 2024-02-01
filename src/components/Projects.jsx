@@ -16,11 +16,11 @@ const Projects = () => {
                 <div className='projects_main_carousel_img'>
                     <img src={img1} alt="" />
                     <button>
-                        <a href="https://wheaterapp-jesus-vergara.netlify.app/" target='_blank'>
+                        <a href="https://unibarranquilla-newspaper.netlify.app/" target='_blank'>
                             <i className='bx bx-navigation'></i>
                         </a>
                     </button>
-                    <h4>Weather App</h4>
+                    <h4>News paper</h4>
                 </div>
                 <div className='projects_main_carousel_img'>
                     <img src={img2} alt="" />

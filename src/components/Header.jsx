@@ -1,30 +1,49 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import '../styles/header.css'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/header.css';
 
 const Header = () => {
+    const [locationHome, setLocationHome] = useState(true);
+    const [locationAbout, setLocationAbout] = useState(false);
+    const [locationContact, setLocationContact] = useState(false);
+    
+    const currentUrl = window.location.href
 
-    const [locationHome, setLocationHome] = useState(true)
-    const [locationAbout, setLocationAbout] = useState(false)
-    const [locationContact, setLocationContact] = useState(false)
+    const About = currentUrl.toString().includes('About')
+    const Contact = currentUrl.toString().includes('Contact')
+
+    useEffect(() => {
+        if (About) {
+            setLocationHome(false);
+            setLocationAbout(true);
+            setLocationContact(false);
+        }
+        if (Contact) {
+            setLocationHome(false);
+            setLocationAbout(false);
+            setLocationContact(true);
+        }
+    }, [locationHome, locationAbout, locationContact])
+
+
 
     const functionSelectHome = () => {
-        setLocationHome(true)
-        setLocationAbout(false)
-        setLocationContact(false)
-    }
+        setLocationHome(true);
+        setLocationAbout(false);
+        setLocationContact(false);
+    };
 
     const functionSelectAbout = () => {
-        setLocationHome(false)
-        setLocationAbout(true)
-        setLocationContact(false)
-    }
+        setLocationHome(false);
+        setLocationAbout(true);
+        setLocationContact(false);
+    };
 
     const functionSelectContact = () => {
-        setLocationHome(false)
-        setLocationAbout(false)
-        setLocationContact(true)
-    }
+        setLocationHome(false);
+        setLocationAbout(false);
+        setLocationContact(true);
+    };
 
     return (
         <header className="header">
@@ -36,21 +55,18 @@ const Header = () => {
                 </div>
             </div>
             <nav className="header_nav">
-                <button
-                    className={locationHome ? 'link-header' : ''}
-                    onClick={functionSelectHome} >
-                    <Link to='/'>HOME</Link></button>
-                <button
-                    className={locationAbout ? 'link-header' : ''}
-                    onClick={functionSelectAbout} >
-                    <Link to='About'>ABOUT</Link></button>
-                <button
-                    className={locationContact ? 'link-header' : ''}
-                    onClick={functionSelectContact} >
-                    <Link to='Contact'>CONTACT</Link></button>
+                <button className={locationHome ? 'link-header' : ''} onClick={functionSelectHome}>
+                    <Link to='/'>HOME</Link>
+                </button>
+                <button className={locationAbout ? 'link-header' : ''} onClick={functionSelectAbout}>
+                    <Link to='About'>ABOUT</Link>
+                </button>
+                <button className={locationContact ? 'link-header' : ''} onClick={functionSelectContact}>
+                    <Link to='Contact'>CONTACT</Link>
+                </button>
             </nav>
         </header>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

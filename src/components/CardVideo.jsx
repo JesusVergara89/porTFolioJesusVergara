@@ -10,7 +10,7 @@ const CardVideo = () => {
   return (
     <article className="Video_card">
       <div className="Video_card_rentangle">
-        <h2>MY WORK...</h2>
+        <h2>Calling an API with Axios</h2>
         <div className="Video_card_rentangle_videos">
 
           {
