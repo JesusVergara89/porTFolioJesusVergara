@@ -25,7 +25,7 @@ const Projects = () => {
                 <div className='projects_main_carousel_img'>
                     <img src={img2} alt="" />
                     <button>
-                        <a href="https://jesusvergara.tech/" target='_blank'>
+                        <a href="https://jesusvergaramechatronic.netlify.app/#/" target='_blank'>
                             <i className='bx bx-navigation'>
                             </i>
                         </a>
